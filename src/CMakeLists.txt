@@ -1,0 +1,6 @@
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+cmake_minimum_required(VERSION 3.30.1)
+project(probabilistic_navigation_system)
+find_package(OpenCV REQUIRED)
+add_executable(probabilistic_navigation_system main.cpp)
+target_link_libraries(probabilistic_navigation_system ${OpenCV_LIBS})
