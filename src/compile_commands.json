@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/paulmarin/Developer/probabilistic_navigation_system/src",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/opencv/4.10.0/include/opencv4 -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/probabilistic_navigation_system.dir/main.cpp.o -c /Users/paulmarin/Developer/probabilistic_navigation_system/src/main.cpp",
-  "file": "/Users/paulmarin/Developer/probabilistic_navigation_system/src/main.cpp",
-  "output": "CMakeFiles/probabilistic_navigation_system.dir/main.cpp.o"
-}
-]
