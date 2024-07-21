@@ -4,3 +4,5 @@ src/CMakeCache.txt
 src/compile_commands.json
 src/probabilistic_navigation_system
 src/tempCodeRunnerFile.cpp
+src/cmake_install.cmake
+src/Makefile
