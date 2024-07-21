@@ -1,49 +1,17 @@
-#include <opencv2/core.hpp>
-#include <opencv2/videoio.hpp>
-#include <opencv2/highgui.hpp>
 #include <iostream>
-#include <stdio.h>
+#include <opencv2/opencv.hpp>
 
 using namespace cv;
 using namespace std;
 
-int main(int, char **)
+int main(int argc, const char *argv[])
 {
-    Mat frame;
-    //--- INITIALIZE VIDEOCAPTURE
-    VideoCapture cap;
-    // open the default camera using default API
-    // cap.open(0);
-    // OR advance usage: select any API backend
-    int deviceID = 0;        // 0 = open default camera
-    int apiID = cv::CAP_ANY; // 0 = autodetect default API
-    // open selected camera using selected API
-    cap.open(deviceID, apiID);
-    // check if we succeeded
-    if (!cap.isOpened())
-    {
-        cerr << "ERROR! Unable to open camera\n";
-        return -1;
-    }
+    // insert code here...
+    cout << "OpenCV version : " << CV_VERSION << endl;
+    cout << "Major version : " << CV_MAJOR_VERSION << endl;
+    cout << "Minor version : " << CV_MINOR_VERSION << endl;
+    cout << "Subminor version : " << CV_SUBMINOR_VERSION << endl;
 
-    //--- GRAB AND WRITE LOOP
-    cout << "Start grabbing" << endl
-         << "Press any key to terminate" << endl;
-    for (;;)
-    {
-        // wait for a new frame from camera and store it into 'frame'
-        cap.read(frame);
-        // check if we succeeded
-        if (frame.empty())
-        {
-            cerr << "ERROR! blank frame grabbed\n";
-            break;
-        }
-        // show live and wait for a key with timeout long enough to show images
-        imshow("Live", frame);
-        if (waitKey(5) >= 0)
-            break;
-    }
-    // the camera will be deinitialized automatically in VideoCapture destructor
+    std::cout << "Hello, World!\n";
     return 0;
 }
